@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+}
+
+p {
+    color: red;
+
+}
+
+h2 {
+color: brown;
+}
+
+:host /deep/ p {
+    color: green;
+}

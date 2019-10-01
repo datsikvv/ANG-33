@@ -1,0 +1,33 @@
+<p>Products</p>
+<ol>
+    <li *ngFor="let product of productList" (click)="selectProduct(product)">
+        {{product.name}} {{product.price}}
+    </li>
+
+</ol>
+<hr>
+
+
+<table class="table">
+    <thead>
+        <tr>    
+                <th>Product</th>
+                <th>Price</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of productList" (click)="selectProduct(product)">
+                <td >{{product.name}}</td>
+                <td >{{product.price}}</td>  
+        </tr>    
+
+    </tbody>
+</table>
+
+<p *ngIf="selectedProduct">{{selectedProduct?.name}}</p>
+
+<br>
+<br>
+<br>
+<br>
+

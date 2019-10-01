@@ -1,0 +1,16 @@
+.nav {
+height: calc(100vh - 60px);
+background-color: lightblue;
+}
+
+.full-width {
+    width: 100%;
+}
+.active {
+    background-color: rgb(10, 57, 73) !important;
+    color: yellow !important;
+}
+
+ul {
+    list-style: none
+}

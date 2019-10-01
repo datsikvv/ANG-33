@@ -1,0 +1,53 @@
+<app-header></app-header>
+<!-- <app-product-list></app-product-list> -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <nav class="nav">
+                <ul>
+                    <li>    
+                        <button routerLink="/home"
+                         routerLinkActive="active"
+                         class="btn  btn-sm btn-outline-light .full-width btn-primary">Home</button>
+                    </li>
+                    <li>    
+                        <button routerLink="/table" 
+                        routerLinkActive="active"
+                        class="btn btn-sm btn-outline-light full-width btn-primary">Table</button>
+                    </li>
+                    <li>    
+                        <button routerLink="/form"
+                         routerLinkActive="active" 
+                         class="btn  btn-sm btn-outline-light .full-width btn-primary">Form</button>
+                    </li>
+                    <li>    
+                        <button routerLink="/test-style" 
+                        routerLinkActive="active"
+                        class="btn  btn-sm btn-outline-light .full-width btn-primary">Test-style</button>
+                    </li>
+                    <li>    
+                        <button routerLink="/input" 
+                        routerLinkActive="active"
+                        class="btn  btn-sm btn-outline-light .full-width btn-primary">Input-output</button>
+                    </li>
+                    <li>    
+                        <button routerLink="/view" 
+                        routerLinkActive="active"
+                        class="btn  btn-sm btn-outline-light .full-width btn-primary">View</button>
+                    </li>
+
+                </ul>
+            
+            
+            </nav>
+        </div> 
+        <div class="col-10">
+            <router-outlet></router-outlet>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
