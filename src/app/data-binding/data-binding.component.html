@@ -1,0 +1,72 @@
+<p>data-binding works!</p>
+
+<!-- <img src="assets/img/1.jpg" title="text"> -->
+<img [src]="res" title="text"> 
+<!-- <img src={{res}} title="text">  -->
+
+
+
+<input type="checkbox" [checked]="flag">flag
+
+<button (click)='toogleImage()'>toogle</button>
+
+<div [class]="getClasses()">
+    text
+</div>
+<div [class.border1]="borderClass" (click)='toogleImage()'>
+    text
+</div>
+<div [class.bg]="bgClass">
+    text
+</div>
+<div [style.background-color]="flag ?  'red' : 'white'">
+    text
+</div>
+
+<hr>
+
+<input type="checkbox" [(ngModel)]="settings.accent" [ngModelOptions]="{standalone: true}" >Accent <br>
+<input type="checkbox" [(ngModel)]="settings.error" [ngModelOptions]="{standalone: true}" >error <br>
+<input type="checkbox" [(ngModel)]="settings.highlighted" [ngModelOptions]="{standalone: true}" >highlighted <br>
+
+
+<div [ngClass]="settings">
+    Test div 1
+</div>
+<div [class.accent]="settings.accent"
+[class.error]="settings.error"
+[class.highlighted]="settings.highlighted">
+    Test div 2
+</div>
+
+
+<hr>
+
+
+<input type="text" [(ngModel)]="choice" [ngModelOptions]="{standalone: true}" >choice <br>
+
+
+<div [ngSwitch]="choice">
+ <div *ngSwitchCase="'1'">div 1</div>
+ <div *ngSwitchCase="'2'">div 2</div>
+ <div *ngSwitchCase="'3'">div 3</div>
+ <div *ngSwitchCase="'4'">div 4</div>
+ <div *ngSwitchDefault=>div  Default</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

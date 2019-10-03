@@ -1,0 +1,23 @@
+.border1 {
+    border: 1px solid black ;
+}
+
+.bg {
+    background-color: aquamarine;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.accent {
+    color: green;
+}
+.error {
+    border: 1px solid red;
+
+}
+.highlighted {
+    background-color: blueviolet;
+
+}

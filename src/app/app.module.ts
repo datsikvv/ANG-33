@@ -15,6 +15,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { CounterComponent } from './input-output/counter/counter.component';
 import { BlockHostComponent } from './block-host/block-host.component';
 import { BlockComponent } from './block-host/block/block.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BlockComponent } from './block-host/block/block.component';
     InputOutputComponent,
     CounterComponent,
     BlockHostComponent,
-    BlockComponent
+    BlockComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { BlockComponent } from './block-host/block/block.component';
       {path: 'home', component: HomeComponent},
       {path: 'test-style', component: TestStyleComponent},
       {path: 'input', component: InputOutputComponent},
-      {path: 'view', component: BlockHostComponent}
+      {path: 'view', component: BlockHostComponent},
+      {path: 'binding', component: DataBindingComponent}
     ]),
     FormsModule
   ],
